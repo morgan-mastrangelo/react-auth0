@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, aliceblue, white);
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 28px;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+h3 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+h4 {
+    margin-top: 0;
+    font-size: 16px;
+}
+
+h5 {
+    margin-top: 0;
+    font-size: 14px;
+}
+
+h6 {
+    margin-top: 0;
+    font-size: 12px;
+}
+
+code {
+    font-size: 1.2em;
+}
+
+/*  Customized styles  */
+
+.backg {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    animation: appear_effect1 .5s;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 36px;
+}
+
+.btn-container button {
+    font-size: large;
+    font-weight: bold;
+    border: 2px solid #4caf50;
+    border-radius: 4px;
+    outline: none;
+    padding: 12px;
+    margin: 0 4px;
+    color: #4caf50;
+    transition: all .3s;
+}
+
+.btn-container button:hover {
+    cursor: pointer;
+    background-color: #4caf50;
+    color: white;
+
+}
+
+
+/*  animations */
+
+@keyframes appear_effect1 {
+    0% { transform: scale(0); }
+    40% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
